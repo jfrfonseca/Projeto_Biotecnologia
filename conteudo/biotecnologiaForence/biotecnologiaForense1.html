@@ -31,17 +31,29 @@
 				<div id="slider"></div>
 			</div>
 
+			<div id="arrows_wrapper" class="col-md-1">
+				<div id="arrow_next" class="col-md-1">
+					<button type="button" onclick="goNext()" class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-arrow-right"></span> Próximo Slide </button>
+				</div>
+			</div>
+			
 		</div>
 
 	</body>
 
 	<script src="../../js/jquery-2.0.3.min.js"></script>
 	<script src="../../js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
 	<script src="../../js/custom.js"></script>
 	<script>
-			$('#textblock').load("text.html");
-
-			$('#mutant').load("mutant.html");
 	
+			$('#textblock').load("text1.html");
+
+			$('#mutant').load("mutant1.html");
+
+			function goNext(){
+				window.location.href = "biotecnologiaForense2.html";
+			}
+			
 	</script>
 </html>

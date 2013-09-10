@@ -1,0 +1,46 @@
+<p id="t3">O primeiro cientista que identificou regiões que se repetiam
+ no DNA as chamou de “impressões digitais do DNA” já que estas seriam únicas,
+ como as impressões digitais de verdade, permitindo a identificação de
+ suspeitos em casos de crimes.
+<p>
+ 
+<p id="t2">Existem vários tipos de regiões repetitivas no nosso genoma,
+ mas as mais utilizadas atualmente para diferenciar uma pessoa da outra
+ são chamadas microssatélites.  
+<p>
+
+<p id="t1">Regiões de microssatélites repetem de dois a seis bases nitrogenadas
+ uma ao lado da outra, como dá pra ver na imagem ao lado que mostra os vários
+ níveis de empacotamento do DNA, desde máximo de condensação do cromossomo
+ metafásico até a sequencia da dupla-fita de DNA.
+<p>
+
+<script>
+	$(document).ready(function() {
+		quant = 0;
+		
+		$("#textblock p").each(function(el){
+			var seq = parseInt((this.getAttribute('id')+"").replace(/^\D/, ''), 10);
+			if(seq > quant){
+				quant = seq;
+			}
+		});
+		
+		$( "#slider" ).slider({
+			value: quant,
+			min: 1,
+			max: quant,
+			step: 1,
+			orientation: "vertical",
+			slide: function( event, ui ) {
+				//goToSlide(ui.value);
+			},
+			change: function( event, ui ) {
+				changeElements(ui.value);
+			}
+		});
+		
+		changeElements(quant);
+		$('#slider').height($('#textblock_wrapper').height());
+	});
+</script>
