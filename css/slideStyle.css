@@ -63,6 +63,15 @@ body{
 	margin-right:auto;
 }
 
+#slider{
+	width: 10px;
+}
+
+#slider a{
+	width: 20px;
+	height: 20px;
+	margin-left: 4px;
+}
 
 #mutant{
 }
