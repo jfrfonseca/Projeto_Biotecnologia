@@ -1,0 +1,112 @@
+@font-face{
+	font-family: "DKCrayonCrumble";
+	src: url("../fonts/DKCrayonCrumble.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "KGSecondChancesSketch";
+	src: url("../fonts/KGSecondChancesSketch.ttf") format("truetype");
+}
+
+body{
+	background: #000000  url("../img/blackboard.jpg") no-repeat fixed center;
+	background-size: cover;
+	font-family: "DKCrayonCrumble" !important;
+	font-size: xx-large !important;
+	color: white !important;
+}
+
+/*img{
+	width:100%;
+	height:100%;
+	min-width:300px;
+	min-height:240px;
+}*/
+
+.center{
+	text-align: center;
+}
+
+.right{
+	text-align: right;
+}
+
+.left{
+	text-align: left;
+}
+
+.title{
+	font-family: "KGSecondChancesSketch";
+	color:white;
+}
+
+.title_system{
+	text-align: center;
+	font-family: "KGSecondChancesSketch";
+	color:white;
+	font-weight: 500;
+	font-size: -webkit-xxx-large;
+}
+
+.atividades{
+	margin-top: 1%;
+}
+
+.atividades div{
+	text-align: center;
+}
+
+#slide{
+	width:90%;
+	margin-top: 35px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+#mutant{
+}
+
+#mutant_wrapper{
+/*
+	max-width:30%;
+	float: left;
+	position:relative;
+	left:0%;
+	top:10%;
+	*/
+}
+
+
+#textblock{
+	font-size: x-large !important;
+}
+
+#textblock_wrapper{
+/*
+	max-width:75%;
+	float: left;
+	position:relative;
+	left:2%;
+	top:10%;
+	*/
+}
+
+
+#slider{
+}
+
+#slider_wrapper{
+/*
+	position:relative;
+	float: left;
+	left:2%;
+	top:0%;
+
+transform: rotate(180deg);
+-ms-transform: rotate(180deg); /* IE 9 *
+-webkit-transform: rotate(180deg); /* Safari and Chrome *
+*/
+
+
+}
