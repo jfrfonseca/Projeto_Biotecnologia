@@ -1,0 +1,43 @@
+<p id="t4">Técnicas
+<p>
+  
+<p id="t3">PCR: a reação em cadeia da polimerase (PCR, do inglês Polymerase Chain Reaction)
+ é uma técnica de biologia molecular que permite fazer milhões de cópias de um trecho do DNA
+ específico de qualquer organismo, seja ele um vírus, uma bactéria, uma planta ou um animal!!
+<p>
+
+<p id="t2">A técnica de PCR imita, de maneira simplificada, o processo de replicação do DNA
+ que acontece antes da divisão celular.
+<p>
+
+<p id="t1"> Os proximos slides explicarão como é feita a PCR.
+<p>
+
+<script>
+	$(document).ready(function() {
+		quant = 0;
+		
+		$("#textblock p").each(function(el){
+			var seq = parseInt((this.getAttribute('id')+"").replace(/^\D/, ''), 10);
+			if(seq > quant){
+				quant = seq;
+			}
+		});
+		
+		$( "#slider" ).slider({
+			value: quant,
+			min: 1,
+			max: quant,
+			step: 1,
+			orientation: "vertical",
+			slide: function( event, ui ) {
+				//goToSlide(ui.value);
+			},
+			change: function( event, ui ) {
+				changeElements(ui.value);
+			}
+		});
+		
+		changeElements(quant);
+	});
+</script>

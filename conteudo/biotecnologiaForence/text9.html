@@ -1,0 +1,46 @@
+<p id="t4">Técnicas
+<p>
+  
+<p id="t3">Eletroforese: é uma metodologia que permite separar moléculas de
+ diferentes tamanhos imersas em um meio poroso (ex: gel ou papel) quando submetidas
+ a uma corrente elétrica. Na sequencia de figuras a seguir é possível visualizar o
+ que acontece durante a eletroforese para separação de moléculas de DNA em um gel.
+<p>
+
+<p id="t2">A eletroforese permite separar moléculas de DNA, RNA e proteínas de
+ acordo com seu tamanho e carga elétrica. No esquema ao lado é possível identificar
+ os pocinhos onde a mistura de moléculas é adicionada.
+<p>
+ 
+<p id="t1">O gel é então submetido a uma corrente elétrica, que permite que as moléculas
+ carregadas negativamente migrem para o polo positivo do gel.
+<p>
+
+<script>
+	$(document).ready(function() {
+		quant = 0;
+		
+		$("#textblock p").each(function(el){
+			var seq = parseInt((this.getAttribute('id')+"").replace(/^\D/, ''), 10);
+			if(seq > quant){
+				quant = seq;
+			}
+		});
+		
+		$( "#slider" ).slider({
+			value: quant,
+			min: 1,
+			max: quant,
+			step: 1,
+			orientation: "vertical",
+			slide: function( event, ui ) {
+				//goToSlide(ui.value);
+			},
+			change: function( event, ui ) {
+				changeElements(ui.value);
+			}
+		});
+		
+		changeElements(quant);
+	});
+</script>

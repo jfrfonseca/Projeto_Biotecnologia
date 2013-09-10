@@ -1,0 +1,49 @@
+<p id="t4">Luminol: a biotecnologia forense também pode fazer uso e reações
+ químicas como a que acontece entre o luminol e o átomo de ferro contido na
+ hemoglobina existente no sangue.
+<p>
+ 
+<p id="t3">Esta reação química evidencia vestígios e sangue na cena de um crime!!
+ O catalisador da reação é o ferro contido na hemoglobina das hemácias. A reação
+ entre a hemoglobina e o luminol é uma reação de oxidação, onde o luminol perde
+ átomos de nitrogênio e hidrogênio e adquire átomos de oxigênio, formando um novo
+ composto em um estado de energia mais elevado.
+<p>
+
+<p id="t2">Quando os elétrons retornam para um nível de energia menor, a energia
+ liberada é emitida em forma de fóton de luz, que dá a cor azul da reação.
+ Veja como fica a reação acessando o link: http://policiacientificasp.files.wordpress.com/2012/06/handjes.jpg.
+<p>
+
+<p id="t1">A reação química completa está representada na figura ao lado.
+<p>
+  
+
+<script>
+	$(document).ready(function() {
+		quant = 0;
+		
+		$("#textblock p").each(function(el){
+			var seq = parseInt((this.getAttribute('id')+"").replace(/^\D/, ''), 10);
+			if(seq > quant){
+				quant = seq;
+			}
+		});
+		
+		$( "#slider" ).slider({
+			value: quant,
+			min: 1,
+			max: quant,
+			step: 1,
+			orientation: "vertical",
+			slide: function( event, ui ) {
+				//goToSlide(ui.value);
+			},
+			change: function( event, ui ) {
+				changeElements(ui.value);
+			}
+		});
+		
+		changeElements(quant);
+	});
+</script>
