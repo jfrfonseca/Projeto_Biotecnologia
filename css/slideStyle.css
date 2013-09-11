@@ -56,6 +56,22 @@ body{
 	text-align: center;
 }
 
+
+.modal{
+	color: black !important;
+}
+
+.modal .modal-title{
+	color: black !important;
+	font-family: "DKCrayonCrumble";
+	font-weight: 500;
+	font-size: xx-large;
+}
+
+.modal .modal-header{
+	background: url("../img/Wiki_Logo.png") no-repeat right;
+}
+
 #slide{
 	width:90%;
 	margin-top: 35px;
@@ -77,13 +93,7 @@ body{
 }
 
 #mutant_wrapper{
-/*
-	max-width:30%;
-	float: left;
-	position:relative;
-	left:0%;
-	top:10%;
-	*/
+
 }
 
 
@@ -92,30 +102,16 @@ body{
 }
 
 #textblock_wrapper{
-/*
-	max-width:75%;
-	float: left;
-	position:relative;
-	left:2%;
-	top:10%;
-	*/
+
 }
 
 
 #slider{
+
 }
 
 #slider_wrapper{
-/*
-	position:relative;
-	float: left;
-	left:2%;
-	top:0%;
 
-transform: rotate(180deg);
--ms-transform: rotate(180deg); /* IE 9 *
--webkit-transform: rotate(180deg); /* Safari and Chrome *
-*/
 }
 
 #arrows_wrapper{
