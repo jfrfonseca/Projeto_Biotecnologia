@@ -39,7 +39,6 @@
 <script>
 	$(document).ready(function() {
 		quant = 0;
-		
 		$("#textblock p").each(function(el){
 			var seq = parseInt((this.getAttribute('id')+"").replace(/^\D/, ''), 10);
 			if(seq > quant){
