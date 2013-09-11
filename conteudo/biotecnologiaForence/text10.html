@@ -1,0 +1,43 @@
+<p id="t3">Técnicas
+<p>
+  
+<p id="t2">O gel é feito de um material que proporciona poros pelos quais as as
+ moléculas vão passar com maior ou menor facilidade. Se forem menores, passam mais
+ rápido pelos poros do que moléculas grandes. 
+<p>
+
+<p id="t1">O resultado é que, ao final da corrida eletroforética, as moléculas
+ menores vão estar mais próximas do polo positivo do que as moléculas maiores,
+ que migraram mais lentamente. Depois de finalizada a eletroforese, o pesquisador
+ poderá analisar o resultado observando as bandas (manchas que mostram aonde cada
+ molécula parou) que aparecem no gel.
+<p>
+
+<script>
+	$(document).ready(function() {
+		quant = 0;
+		
+		$("#textblock p").each(function(el){
+			var seq = parseInt((this.getAttribute('id')+"").replace(/^\D/, ''), 10);
+			if(seq > quant){
+				quant = seq;
+			}
+		});
+		
+		$( "#slider" ).slider({
+			value: quant,
+			min: 1,
+			max: quant,
+			step: 1,
+			orientation: "vertical",
+			slide: function( event, ui ) {
+				//goToSlide(ui.value);
+			},
+			change: function( event, ui ) {
+				changeElements(ui.value);
+			}
+		});
+		
+		changeElements(quant);
+	});
+</script>

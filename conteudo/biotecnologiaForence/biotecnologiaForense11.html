@@ -14,30 +14,33 @@
 				<a class="navbar-brand title" href="../../index.html">Biotecnologia</a>
 			</div>
 			<div class="collapse navbar-collapse navbar-ex1-collapse center">
-				Biotecnologia Forense (2/9)
+				Biotecnologia Forense (9/9)
 		</nav>
 
 		<div id="slide" class="row">
 
-			<div id="mutant_wrapper" class="col-md-2">
-				<div id="mutant"></div>
-			</div>
-
 			<div id="textblock_wrapper" class="col-md-9">
 				<div id="textblock"></div>
 			</div>
-
-			<div id="slider_wrapper" class="col-md-1">
-				<div id="slider"></div>
-			</div>
+			
+			<div id="activity_wrapper" class="col-md-3" 
+				style=" float:right;"
+			>
+				<img src="mutants/question.png" height="240" width="280">
+				<br><br>
+				<img id="answer" src="mutants/waitAnswer.png" height="120">
+				<br>
+				<button onclick="optedOrange()"><img src="mutants/orange.png" /></button> <button onclick="optedYellow()"><img src="mutants/yellow.png" /></button> <button onclick="optedGreen()"><img src="mutants/green.png" /></button>
+			</div> 
 
 			<div id="arrows_wrapper" class="col-md-1">
-				<div id="arrow_next" class="col-md-1">
-					<button type="button" onclick="goNext()" class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-arrow-right"></span> Próximo Slide </button>
-				</div>
-				
+		
 				<div id="arrow_back" class="col-md-1">
 					<button type="button" onclick="goBack()" class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-arrow-left"></span> Slide Anterior </button>
+				</div>
+				
+				<div id="arrow_next" class="col-md-1" style="visibility:hidden;">
+					<button type="button" onclick="goNext()" class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-arrow-right"></span> Próximo Slide </button>
 				</div>
 			</div>
 			
@@ -50,11 +53,9 @@
 	<script src="../../js/custom.js"></script>
 	<script>
 			
-			var current_number = 2;
+			var current_number = 11;
 			
 			$('#textblock').load("text"+current_number+".html");
-
-			$('#mutant').load("mutant"+current_number+".html");
 	
 			function goNext(){
 				window.location.href = "biotecnologiaForense"+(current_number+1)+".html";
@@ -62,6 +63,19 @@
 			
 			function goBack(){
 				window.location.href = "biotecnologiaForense"+(current_number-1)+".html";
+			}
+			
+			function optedOrange() {
+				document.getElementById("answer").src="mutants/answerOrange.png";
+			}
+			
+			function optedYellow() {
+				document.getElementById("answer").src="mutants/answerYellow.png";
+			}
+			
+			function optedGreen() {
+				document.getElementById("answer").src="mutants/answerGreen.png";
+				document.getElementById("arrow_next").style.visibility='visible';
 			}
 			
 	</script>

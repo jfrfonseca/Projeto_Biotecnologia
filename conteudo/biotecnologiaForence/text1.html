@@ -1,0 +1,52 @@
+<p id="t5">A Biotecnologia Forense utiliza um enorme número de técnicas
+ que envolvem diversos conhecimentos
+<p>
+ 
+<p id="t4">Por exemplo, conhecimentos de química e  biologia,  usados 
+ para o objetivo de auxiliar na solução de crimes. 
+<p>
+
+<p id="t3">Técnicas de biologia molecular podem envolver o uso de marcadores
+ moleculares que evidenciam pequenas regiões de DNA repetitivo que  são
+ utilizadas para distinguir um indivíduo de outro. Dessa forma, é possível,
+ por exemplo, culpar ou inocentar uma pessoa acusada de um assassinato ou
+ testar a paternidade, como veremos no estudo de caso  apresentado nesse tópico.
+<p>
+
+<p id="t2">A técnica de sequenciamento de DNA pode também ser utilizada
+ para fins forenses. Essa técnica permite a identificação de espécies e
+ ajuda a policia ambiental a incriminar traficantes de plantas e animais. 
+<p>
+
+<p id="t1">Veremos essa técnica em mais detalhes no tópico de Genética
+ e Conservação da Biodiversidade.
+<p>
+
+<script>
+	$(document).ready(function() {
+		quant = 0;
+		
+		$("#textblock p").each(function(el){
+			var seq = parseInt((this.getAttribute('id')+"").replace(/^\D/, ''), 10);
+			if(seq > quant){
+				quant = seq;
+			}
+		});
+		
+		$( "#slider" ).slider({
+			value: quant,
+			min: 1,
+			max: quant,
+			step: 1,
+			orientation: "vertical",
+			slide: function( event, ui ) {
+				//goToSlide(ui.value);
+			},
+			change: function( event, ui ) {
+				changeElements(ui.value);
+			}
+		});
+		
+		changeElements(quant);
+	});
+</script>

@@ -1,0 +1,22 @@
+<div id="m4">
+	<img src="mutants/quimica.png" width="200px"/>
+</div>
+
+<div id="m3">
+	<img src="mutants/oxidacao.png" width="200px" />
+</div>
+
+<div id="m2">
+	<img src="mutants/handjes.png" width="200px" />
+</div>
+
+<div id="m1">
+	<img src="mutants/reacao1.png" width="200px" />
+</div>
+
+<script>
+	$('#mutant div').each(function(){
+		var txt = this.getAttribute('id');
+		$("#"+txt).hide();
+	});
+</script>

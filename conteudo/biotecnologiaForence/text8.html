@@ -1,0 +1,39 @@
+<p id="t2">PCR: a Reação em Cadeia da Polimerase (PCR, do inglês Polymerase Chain Reaction) - Slide 2
+<p>
+  
+<p id="t1">As temperaturas mostradas no gráfico indicam: <br>
+1 - Desnaturação (~ 90 a 96oC, permite que a dupla fita de DNA se separe em fitas simples);<br>
+2 - Pareamento dos oligonucleotídeos iniciadores (entre ~ 55 e 65oC, permite que os primers se combinem na região correta do DNA);<br>
+3 - Extensão (72oC é a temperatura ideal para que a taq polimerase incorpore os novos nucleotídeos e produza uma nova molécula de DNA dupla-fita).<br>
+ E essas temperaturas vão se repetindo em ciclos até que, ao final de 30 ciclos, estima-se que
+ a partir de uma única molécula de DNA formam-se 100 bilhões de cópias idênticas do trecho desejado!!!
+<p>
+
+<script>
+	$(document).ready(function() {
+		quant = 0;
+		
+		$("#textblock p").each(function(el){
+			var seq = parseInt((this.getAttribute('id')+"").replace(/^\D/, ''), 10);
+			if(seq > quant){
+				quant = seq;
+			}
+		});
+		
+		$( "#slider" ).slider({
+			value: quant,
+			min: 1,
+			max: quant,
+			step: 1,
+			orientation: "vertical",
+			slide: function( event, ui ) {
+				//goToSlide(ui.value);
+			},
+			change: function( event, ui ) {
+				changeElements(ui.value);
+			}
+		});
+		
+		changeElements(quant);
+	});
+</script>

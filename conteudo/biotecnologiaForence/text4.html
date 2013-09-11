@@ -1,0 +1,54 @@
+<p id="t5">Estudo de caso: o sequestro de “Pedrinho”
+<p>
+ 
+<p id="t4">Em 21 de janeiro de 1986, o recém-nascido Pedro Braule Pinto
+ foi sequestrado do hospital Santa Lúcia, em Brasília. Seus pais biológicos,
+ Maria Auxiliadora R. B. Pinto e Jayro Tapajós, buscaram pelo paradeiro
+ do filho por quase dezessete anos.
+<p>
+
+<p id="t3">Tendo sido registrado como Osvaldo Borges Júnior, filho natural
+ de Vilma Martins e Osvaldo Borges, Pedrinho só soube a verdade em 2002,
+ quando uma denúncia anônima ao SOS criança alertou os pais biológicos,
+ que se submeteram a um exame que comparou o DNA deles com o obtido a
+ partir de um fio de cabelo do rapaz.
+<p>
+
+<p id="t2">Descobriu-se posteriormente, que Vilma havia também sequestrado
+ em 1979, uma outra criança. Os resultados dos exames de DNA, além de
+ revelarem a real paternidade dos envolvidos, ainda serviu como prova
+ para condenar Vilma a 15 anos e 9 meses de cadeia pelo crime de sequestro.
+<p>
+
+<p id="t1">A seguir veremos em maior detalhe três metodologias muito utilizadas nas análises de DNA!
+<p>
+  
+
+<script>
+	$(document).ready(function() {
+		quant = 0;
+		
+		$("#textblock p").each(function(el){
+			var seq = parseInt((this.getAttribute('id')+"").replace(/^\D/, ''), 10);
+			if(seq > quant){
+				quant = seq;
+			}
+		});
+		
+		$( "#slider" ).slider({
+			value: quant,
+			min: 1,
+			max: quant,
+			step: 1,
+			orientation: "vertical",
+			slide: function( event, ui ) {
+				//goToSlide(ui.value);
+			},
+			change: function( event, ui ) {
+				changeElements(ui.value);
+			}
+		});
+		
+		changeElements(quant);
+	});
+</script>

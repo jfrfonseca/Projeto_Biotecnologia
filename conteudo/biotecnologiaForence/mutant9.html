@@ -1,0 +1,14 @@
+<div id="m3">
+	<img src="mutants/eletroforese.png" width="200px"/>
+</div>
+
+<div id="m2">
+	<img src="mutants/pocos.png" width="200px"/>
+</div>
+
+<script>
+	$('#mutant div').each(function(){
+		var txt = this.getAttribute('id');
+		$("#"+txt).hide();
+	});
+</script>
