@@ -1,0 +1,60 @@
+%!Adobe-FontList 1.14
+%Locale:0x416
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ChalkDust
+FamilyName:ChalkDust
+StyleName:Regular
+FullName:ChalkDust
+MenuName:ChalkDust
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Pri\Desktop\Cris Nery System\Font\ChalkDust.ttf
+DataFormat:sfntData
+FileLength:219045
+FileModTime:1381065134
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EraserDust
+FamilyName:EraserDust
+StyleName:Regular
+FullName:EraserDust
+MenuName:EraserDust
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Pri\Desktop\Cris Nery System\Font\erasdust.ttf
+DataFormat:sfntData
+FileLength:98456
+FileModTime:878308320
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Eraser-Regular
+FamilyName:Eraser
+StyleName:Regular
+FullName:Eraser Regular
+MenuName:Eraser
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Pri\Desktop\Cris Nery System\Font\Eraser.ttf
+DataFormat:sfntData
+FileLength:127032
+FileModTime:705818760
+WeightClass:5
+WidthClass:5
+AngleClass:0
+%EndFont
+
