@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">	
+		<link rel="stylesheet" type="text/css" href="localStyle.css">		
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/jquery.zoomooz.min.js"></script>
+		<script src="../../js/nhpup_1.1.js"></script>
+		<script src="../../js/navegacao.js"></script>
+	</head>
+
+	<body class="slideQuadro">
+		<div id="tomada1" style="width:100%; height:100%; position: absolute; bottom:0px;">
+			<div id="texto" style="width:80%; position:absolute; top:5%; margin-left:10%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				A BioÉtica aborda quatro princípios básicos  que visam assegurar os direitos e deveres que dizem respeito à pesquisa científica, aos sujeitos envolvidos e ao Estado. São eles:
+			</div>					
+			<img src="images/chalkDenito7.png" style="width:300px; position: absolute; bottom:0px; left:5%">
+			<img src="images/principios.png" style="width:600px; position: absolute; bottom:80px; left:30%">
+		</div>
+		<div id="tomada2" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+			<div id="texto" style="width:85%; position:absolute; top:5%; margin-left:10%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Como muitas as aplicações biotecnológicas envolvem testes e o desenvolvimento de produtos para uso por seres humanos ou outros com seres vivos, discussões sobre os prós e contras do uso dessas tecnologias devem ser amplamente discutidas, você não acha?
+			</div>						
+			<img src="images/chalkDenito3.png" style="width:200px; position: absolute; bottom:0px; left:40%">
+		</div>
+		<div id="tomada3" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+			<div id="texto" style="width:80%; position:absolute; top:5%; margin-left:10%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Uma técnica biotecnológica bastante debatida atualmente são as chamadas “Técnicas de Reprodução Assistida”, que se caracterizam pelo conjunto de técnicas que auxiliam no processo de reprodução humana ou de outros animais. 
+				<br><br>
+				A técnica de fertilização in vitro, utilizada por muitos casais que não conseguem ter bebês, envolve a manipulação de gametas além de ser bastante complexa e cara!!
+			</div>						
+			<img src="images/chalkDenito6.png" style="width:180px; position: absolute; bottom:0px; left:78%">
+		</div>
+	</body>
+
+	<script>	
+		//Constants
+		const cenarioAtual = 5;
+		const numTomadas = 3;
+		const locucoes = ["", ""];
+		
+		//Buffers
+		var tomadaAtual = 0;
+		
+		//Load:
+		avancaTomada();
+		
+	</script>
+</html>

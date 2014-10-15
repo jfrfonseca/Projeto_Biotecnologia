@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">	
+		<link rel="stylesheet" type="text/css" href="localStyle.css">		
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/jquery.zoomooz.min.js"></script>
+		<script src="../../js/nhpup_1.1.js"></script>
+		<script src="../../js/navegacao.js"></script>
+	</head>
+
+	<body class="slideQuadro">
+		<div id="tomada1" style="width:100%; height:100%; position: absolute; bottom:0px;">
+			<div id="texto" style="width:90%; position:absolute; top:2%; left:5%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Maria Vitória era um bebê aparentemente normal, mas com o crescimento, começou a apresentar uma doença crônica e grave conhecida como talassemia, na qual a medula óssea produz menos glóbulos vermelhos, prejudicando dessa forma o transporte de oxigênio pelo organismo 
+			</div>						
+			<img src="images/chalkSofia4.png" style="width:200px; position: absolute; bottom:0px; left:4%">
+			<div id="texto" style="width:60%; position:absolute; top:48%; left:33%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				O estado de saúde de Maria Vitória piorava progressivamente e só havia uma solução para salvá-la: um transplante! Para tanto poderiam usar células-tronco de medula óssea ou de cordão umbilical de um doador compatível.
+			</div>
+		</div>
+		<div id="tomada2" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+			<div id="texto" style="width:90%; position:absolute; top:2%; left:5%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Maria Vitória, porém, não tinha doador compatível. Seus pais decidiram então gerar uma outra criança que poderia doar células saudáveis que pudessem curar Maria Vitória. Para tanto, a criança gerada, além de não ser portadora da doença teria que ser geneticamente compatível.... 
+			</div>						
+			<img src="images/chalkSofia4.png" style="width:200px; position: absolute; bottom:0px; left:4%">
+			<div id="texto" style="width:60%; position:absolute; top:44%; left:33%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				A única maneira de garantir isso seria fazer uma fertilização in vitro, seguida de um diagnóstico pré-implantação (DPI) para selecionar um embrião compatível e implantá-lo no útero da mãe, Jânyce. E foi assim que nasceu Maria Clara!
+			</div>
+		</div>
+		<div id="tomada3" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+			<div id="texto" style="width:90%; position:absolute; top:5%; left:5%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				uso de técnicas de DPI são utilizadas rotineiramente quando se faz a fertilização in vitro e auxiliam a prevenir a implantação de embriões portadores de determinadas doenças genéticas, como por exemplo, a síndrome do Down.
+			</div>						
+			<img src="images/chalkSofia4.png" style="width:200px; position: absolute; bottom:0px; left:4%">
+			<div id="texto" style="width:60%; position:absolute; top:48%; left:33%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Vamos ver o livro onde eu explico melhor.
+			</div>
+			<img src="images/livro.png" style="width:150px; position: absolute; bottom:80px; left:60%">
+		</div>
+	</body>
+
+	<script>	
+		//Constants
+		const cenarioAtual = 7;
+		const numTomadas = 3;
+		const locucoes = ["", "", ""];
+		
+		//Buffers
+		var tomadaAtual = 0;
+		
+		//Load:
+		avancaTomada();
+		
+	</script>
+</html>

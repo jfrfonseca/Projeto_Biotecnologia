@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">	
+		<link rel="stylesheet" type="text/css" href="localStyle.css">		
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/jquery.zoomooz.min.js"></script>
+		<script src="../../js/nhpup_1.1.js"></script>
+		<script src="../../js/navegacao.js"></script>
+	</head>
+
+	<body class="slideQuadro">
+		
+		<div id="tomada1" style="display:none; width: 100%; height:100%; background-image:url('images/bg_cenario1.png') !important;">
+			<img src="images/aluna.png"  width="465px" style="position: absolute; top: 8.5%; left: 25%;">
+			<img src="images/balao1.png" width="34%"   style="position: absolute; top: 7%; left: 60%;">
+			<div class="textoBalao" 	 style="width: 25%; position: absolute; top: 15%; left: 66%; color: black; z-index:55;">
+				Denito, eu sempre escuto muito falar que os cientistas usam células tronco para pesquisas. Mas para que eles usam?
+			</div>
+		</div>
+		
+		<div id="tomada2" style="position: absolute; top: 120px; left: 150px; display:none; width:70%;">
+			<div style="color:white; font-size:22pt; font-family:Comic Sans MS; text-align:center;">
+				Bom, devido a essa alta capacidade de diferenciação, as células tronco têm sido usadas em pesquisas para o tratamento de diversas doenças, como regeneração de órgãos doentes. Vamos ver alguns exemplos no livro!
+			</div>
+			<img src="images/halfDenito.png" width="200px" style="position: relative; top: 20; float:left;" onclick="cliqueLivro()">
+			<img id="livro" src="images/livro.png" width="200px" style="position: relative; top: 20; float:right;" onclick="cliqueAvanca('livro',2)">
+			
+		</div>
+		
+	</body>
+
+	<script>		
+		//Constants
+		const cenarioAtual = 4;
+		const numTomadas = 2;
+		const locucoes = ["", "14", "15"];
+		
+		//Buffers
+		var tomadaAtual = 0;
+
+		//Load:
+		avancaTomada(0);	
+	</script>
+</html>

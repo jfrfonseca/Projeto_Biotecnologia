@@ -1,0 +1,15 @@
+.slideMuro{
+	background-image:url("images/bg_cenario1.png");
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+
+.slideQuadro{
+	background-color: transparent !important;
+}
+
+.slideLivro{
+	background-image:url("images/bg_livro.png");
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+}

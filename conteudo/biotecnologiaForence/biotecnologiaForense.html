@@ -1,92 +1,66 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC>
+<html>
 	<head>
 		<meta content="noindex, nofollow" name="robots">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" type="text/css" href="../../css/jquery-ui-1.10.3.custom.min.css">
-		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">		
+		<script src="../../js/navegacao.js"></script>
 	</head>
 
-		<body>		
-			<div id="container">
-				<div class="flagAtividade">
-					<div class="flagAtividade img">
-						<img src="biotecnologia-forense.png" height="150px" width="150px">
-					</div>
-					Biotecnologia Forense
-				</div>
-				
-				<div id="slide">
-				
-					<div id="tabContent">
-						<p>CONTEÚDO DA ABA 1</p>
-					</div>
-				
-					<div id="tabs">			
-						<img src="../../img/sideline.png" style="float:left; position:relative; left:30px; top:3px;">
-						<ul>
-							<li onclick="alternaConteudo('1')">
-								<div id="1" height="40px">
-									<img src='../../img/tabActive.png' height="40px"><div style="position:relative; top:-37px; left:2px;">1</div>
-								</div>
-							</li>
-							<li onclick="alternaConteudo('2')">
-								<div id="2" height="40px">
-									<img src='../../img/tabInactive1.png' height="40px"><div style="position:relative; top:-37px; left:2px;">2</div>
-								</div>
-							</li>
-							<li onclick="alternaConteudo('3')">
-								<div id="3" height="40px">
-									<img src='../../img/tabInactive1.png' height="40px"><div style="position:relative; top:-37px; left:2px;">3</div>
-								</div>
-							</li>
-							<li onclick="alternaConteudo('4')">
-								<div id="4" height="40px">
-									<img src='../../img/tabInactive1.png' height="40px"><div style="position:relative; top:-37px; left:2px;">4</div>
-								</div>
-							</li>
-							<li onclick="alternaConteudo('5')">
-								<div id="5" height="40px">
-									<img src='../../img/tabInactive1.png' height="40px"><div style="position:relative; top:-37px; left:2px;">5</div>
-								</div>
-							</li>
-							<li onclick="alternaConteudo('6')">
-								<div id="6" height="40px">
-									<img src='../../img/tabInactive1.png' height="40px"><div style="position:relative; top:-37px; left:2px;">6</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				
-					<img src="../../img/underline.png" width="880px" style="position:relative; left:120px; top:0px">
-				
-					<div id="arrow_back">
-						<a href="../../index.html">
-							<img src="../../img/seta.png"><br>
-							INÍCIO<br><br>
-						</a>
-					</div>
-					<div id="arrow_next">
-						<a href="../usoDeCelulasTronco/usoDeCelulasTronco.html">
-							<img src="../../img/seta.png" id="imgNext"><br>
-							Próximo Tópico:<br>
-							USO DE CÉLULAS TRONCO
-						</a>
-					</div>		
-				</div>
-			</div>
-		</body>
-
-	<script src="../../js/jquery-2.0.3.min.js"></script>
-	<script src="../../js/jquery-ui-1.10.3.custom.min.js"></script>
-	<script src="../../js/custom.js"></script>
-	
-	<script>
-		var current_number = 1;
-		var numTabs = 6;
-		var abasComApendices = [];
+		<body onresize="escalar()">			
+			<div id="container" >
 		
-		alternaConteudo(1);
-
+				<div id="cenario">				
+				</div>	
+				
+				<div id="controles">
+				
+					<div id="autoPilot" onclick="automatico()">
+						<img id="autoIcon" src="../../img/play.png" width="100%">
+					</div>
+				
+					<div id="abas">
+						<div class="aba" onclick="alternaCenario(1)">
+							<div class="num"> 1 </div>
+							<img src="../../img/tabn.png" width="100%">							
+						</div>
+						<div class="aba" onclick="alternaCenario(13)">
+							<img src="../../img/tabn.png" width="100%">
+							<div class="num"> 2 </div>
+						</div>
+					</div>
+					
+					<div id="som">
+					</div>
+					
+					<div id="setas">
+						<div class="nav" id="anterior" onclick="document.getElementById('scene').contentWindow.retornaTomada()">
+							<img src="../../img/seta.png" width="90%">
+						</div>					
+						<div class="nav" id="home">
+							<a href="../../index.html">
+								<img src="../../img/home.png" width="90%">
+							</a>
+						</div>										
+						<div class="nav" id="proximo" onclick="document.getElementById('scene').contentWindow.avancaTomada(1)">
+							<img src="../../img/seta.png" id="imgNext" width="90%">
+						</div>	
+					</div>
+					
+				</div>
+				
+			</div>			
+		</body>
+	
+	<script>	
+		//Constants
+		const numCenarios = 16;
+		
+		//Variables
+		var auto = true;
+	
+		//Load:
+		escalar();
+		alternaCenario(1);
 	</script>
 </html>
