@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/jquery.lettering.js"></script>		
+		<link rel="stylesheet" type="text/css" href="../../css/animate.css">		
+		<script src="../../js/jquery.textillate.js"></script>		
+	</head>
+
+	<body style="background: none !important;">
+	
+		<audio loop id="som">
+			<source src="" type="audio/mpeg">
+		</audio> 
+					
+		<div id="tabText">
+			<div id="fala0">
+				<img id="narradorFala0" src="images/Cientista.png" width="42%">
+				<div style="float:left; width:50%; font-size: 22px !important; position:absolute; bottom:50px; left:40%;">
+					Clique no botão de Play, abaixo, para começar. 
+					<br>
+					Após a animação, clique na terceira aba da lista vertical à direita.
+				</div>
+			</div>
+			
+			<div id="fala1" style="display:none">
+				<div class="tlt1" style="float:left; width:100%; font-size: 22px !important;">			 
+					Obrigada Denito! Para iniciar o nosso assunto, vou contar um caso para vocês. 
+					Em 21 de janeiro de 1986, o recém-nascido Pedro Braule Pinto foi sequestrado 
+					do hospital Santa Lúcia, em Brasília. Seus pais biológicos, Maria Auxiliadora 
+					R. B. Pinto e Jayro Tapajós, buscaram pelo paradeiro do filho por quase 
+					dezessete anos. Tendo sido registrado como Osvaldo Borges Júnior, filho natural 
+					de Vilma Martins e Osvaldo Borges, Pedrinho só soube a verdade em 2002, quando 
+					uma denúncia anônima ao SOS criança alertou os pais biológicos que se submeteram 
+					a um exame que comparou o DNA deles ao obtido a partir de um fio de cabelo do 
+					rapaz. Descobriu-se posteriormente, que Vilma havia também sequestrado em 1979, 
+					uma outra criança. Os resultados dos exames de DNA, além de revelarem a real 
+					paternidade dos envolvidos, ainda serviu como prova para condenar Vilma a 15 
+					anos e 9 meses de cadeia pelo crime de sequestro! 
+				</div>
+			</div>
+			<div id="fala2" style="display:none">
+				<img id="narradorFala2" src="images/Cientista.png" width="20%" style="position:relative; right:-500px; float:right; z-index:10;">
+				<div class="tlt2" style="float:left; width:80%; font-size:28px !important;">			 
+					Você já se perguntou como fazem essas análises de DNA? Como fazem para extrair 
+					esta molécula da célula? Vamos então para o quadro!  
+				</div>
+			</div>
+			<div id="fala3" style="display:none">
+				<div class="tlt3" style="float:right; width:96%; font-size: 28px !important;">			 
+					Existem várias técnicas para extrair, isto é, retirar o DNA de dentro das células do 
+					organismo ou tecido que se quer estudar, mas todas elas envolvem as etapas a seguir:  
+					rompimento das células, 
+					separação do DNA de outros materiais orgânicos, 
+					precipitação do DNA na solução, e 
+					secagem e diluição. 
+					Vamos entender o que acontece em cada uma destas etapas. Acompanhe.
+				</div>
+			</div>
+			<div id="fala4" style="display:none">
+				<div class="tlt4" style="width:100%; font-size: 38px !important;">			 
+					Clique na sexta aba na lista vertical à direita para continuar.
+				</div>
+			</div>
+
+			<div id="controles">
+				<img onclick="rewind()" src="../../img/rew.png" width="20px">
+				<img onclick="toggle()" id="playPause" src="../../img/play.png" width="20px">
+				<img onclick="foward()" src="../../img/ff.png" width="20px">
+				<div style="float:right">
+					<div class="timer fill">
+				</div>
+			</div>
+			
+		</div>
+	
+	</body>
+	
+	<script>
+		var numFalas = 4;
+		var tempoFala = [45000, 9000, 22000, 5000];
+		var soundFiles = ["../../img/chalkNoise.mp3", "../../img/chalkNoise.mp3", "../../img/chalkNoise.mp3", ""];
+	</script>
+	
+	<script src="../../js/custom.js"></script>
+	
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/jquery.lettering.js"></script>		
+		<link rel="stylesheet" type="text/css" href="../../css/animate.css">		
+		<script src="../../js/jquery.textillate.js"></script>		
+	</head>
+
+	<body style="background: none !important;">
+	
+		<audio loop id="som">
+			<source src="" type="audio/mpeg">
+		</audio> 
+					
+		<div id="tabText">
+			<div id="fala0">	 
+				<div style="float:right; width:80%; font-size: 22px !important; position:absolute; bottom:40px; left:10%;">
+					Clique no botão de Play, abaixo, para começar. 
+					<br>
+					Após a animação, clique na terceira aba da lista vertical à direita.
+				</div>
+			</div>
+			
+			<div id="fala1" style="display:none">
+				<img id="narradorFala1" src="images/denito.png" width="20%" style="position:relative; left:-500px;">
+				<div class="tlt1" style="float:right; width:78%; font-size: 28px !important;">			 
+					Você já viu quem em filmes ou naquelas séries policiais, sempre tem uma hora que 
+					para investigar se existe algum vestígio de sangue na cena do crime, eles utilizam 
+					uma substância que acaba revelando sangue onde não dava para ver? Não, ninguém 
+					fez macumba ou mágica, apenas foram usados conhecimentos de química! Ficou curioso 
+					para ver como funciona? Vou explicar...
+				</div>
+			</div>
+			<div id="fala2" style="display:none">
+				<img id="narradorFala2" src="images/denito.png" width="17%" style="position:relative; right:-500px; float:right">
+				<div class="tlt2" style="float:left; width:80%; font-size: 25px !important;">			 
+					A reação química que evidencia vestígios e sangue na cena de um crime ocorre entre 
+					o luminol e o átomo de ferro contido hemoglobina existente no sangue. O catalisador 
+					da reação é o ferro contido na hemoglobina das hemácias. A reação entre a hemoglobina 
+					e o luminol é uma reação de oxidação, onde o luminol perde átomos de nitrogênio e 
+					hidrogênio e adquire átomos de oxigênio, formando um novo composto em um estado de 
+					energia mais elevado. Quando os elétrons retornam para um nível de energia menor, a 
+					energia liberada é emitida em forma de fóton de luz, que dá a cor azul da reação.  
+				</div>
+			</div>
+			<div id="fala3" style="display:none">
+				<img id="narradorFala3" src="images/denito.png" width="20%" style="position:relative; left:-500px;">
+				<div class="tlt3" style="float:right; width:78%; font-size: 32px !important;">			 
+					Existem ainda algumas metodologias muito utilizadas nas análises de DNA. Para explicar 
+					algumas delas, passo a vez para a Creuza Jurema, que entende melhor deste assunto. 
+				</div>
+			</div>
+			<div id="fala4" style="display:none">
+				<div class="tlt4" style="width:100%; font-size: 38px !important;">			 
+					Clique na quinta aba na lista vertical à direita para continuar.
+				</div>
+			</div>
+
+			<div id="controles">
+				<img onclick="rewind()" src="../../img/rew.png" width="20px">
+				<img onclick="toggle()" id="playPause" src="../../img/play.png" width="20px">
+				<img onclick="foward()" src="../../img/ff.png" width="20px">
+				<div style="float:right">
+					<div class="timer fill">
+				</div>
+			</div>
+			
+		</div>
+	
+	</body>
+	
+	<script>
+		var numFalas = 4;
+		var tempoFala = [20000, 30000, 12000, 5000];
+		var soundFiles = ["../../img/chalkNoise.mp3", "../../img/chalkNoise.mp3", "../../img/chalkNoise.mp3", ""];
+	</script>
+	
+	<script src="../../js/custom.js"></script>
+	
+</html>

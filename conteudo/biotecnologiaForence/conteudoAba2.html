@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/jquery.lettering.js"></script>		
+		<link rel="stylesheet" type="text/css" href="../../css/animate.css">		
+		<script src="../../js/jquery.textillate.js"></script>		
+	</head>
+
+	<body style="background: none !important;">
+	
+		<audio loop id="som">
+			<source src="" type="audio/mpeg">
+		</audio> 
+					
+		<div id="tabText">
+			<div id="fala0">
+				<div style="float:right; width:80%; font-size: 40px !important; position:absolute; top:50%; left:12%;">			 
+					Técnicas de Biologia Molecular
+					<br>
+					<br>
+				</div>
+				<div style="float:right; width:80%; font-size: 22px !important; position:absolute; bottom:40px; left:10%;">
+					Clique no botão de Play, abaixo, para começar. 
+					<br>
+					Após a animação, clique na terceira aba da lista vertical à direita.
+				</div>
+			</div>
+			
+			<div id="fala1" style="display:none">
+				<img id="narradorFala1" src="images/denito.png" width="20%" style="position:relative; left:-500px;">
+				<div class="tlt1" style="float:right; width:78%; font-size: 28px !important;">			 
+					Técnicas de biologia molecular podem envolver, por exemplo, o uso de marcadores 
+					moleculares que evidenciam pequenas regiões de DNA repetitivo que são utilizadas 
+					para distinguir um indivíduo de outro. Essas regiões que se repetem são conhecidas 
+					como “impressões digitais de DNA”. Foram chamadas assim porque essas repetições 
+					seriam únicas para cada indivíduo como as impressões digitais de verdade! 
+				</div>
+			</div>
+			<div id="fala2" style="display:none">
+				<div class="tlt2" style="width:90%; font-size: 32px !important;">			 
+					Hum! Acho que estou entendendo agora, dessa forma dá para identificar os suspeitos 
+					de um crime, como identificamos uma pessoa pela sua digital!. 
+				</div>
+			</div>
+			<div id="fala3" style="display:none">
+				<div class="tlt3" style="width:100%; font-size: 28px !important;">			 
+					Isso mesmo Carol! Existem vários tipos de regiões repetitivas no nosso genoma, 
+					mas as mais utilizadas atualmente para diferenciar uma pessoa da outra são 
+					chamadas microssatélites. Regiões de microssatélites repetem de dois a seis 
+					bases nitrogenadas uma ao lado da outra. Para que você possa entender melhor, 
+					vou desenhar no quadro os vários níveis de empacotamento do DNA, desde máximo 
+					de condensação do cromossomo metafásico até a sequencia da dupla-fita de DNA. Veja!
+				</div>
+			</div>
+			<div id="fala4" style="display:none">
+				<div class="tlt4" style="width:100%; font-size: 38px !important;">			 
+					Clique na terceira aba na lista vertical à direita para continuar.
+				</div>
+			</div>
+
+			<div id="controles">
+				<img onclick="rewind()" src="../../img/rew.png" width="20px">
+				<img onclick="toggle()" id="playPause" src="../../img/play.png" width="20px">
+				<img onclick="foward()" src="../../img/ff.png" width="20px">
+				<div style="float:right">
+					<div class="timer fill">
+				</div>
+			</div>
+			
+		</div>
+	
+	</body>
+	
+	<script>
+		var numFalas = 4;
+		var tempoFala = [20000, 9000, 20000, 5000];
+		var soundFiles = ["../../img/chalkNoise.mp3", "../../img/questionNoise.mp3", "../../img/chalkNoise.mp3", ""];
+	</script>
+	
+	<script src="../../js/custom.js"></script>
+	
+</html>
