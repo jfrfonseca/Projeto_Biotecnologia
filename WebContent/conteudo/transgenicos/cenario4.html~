@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">	
+		<link rel="stylesheet" type="text/css" href="localStyle.css">		
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/jquery.zoomooz.min.js"></script>
+		<script src="../../js/nhpup_1.1.js"></script>
+		<script src="../../js/navegacao.js"></script>
+	</head>
+
+	<body class="slideQuadro">
+		<div id="tomada1" style="width:100%; height:100%; position: absolute; bottom:0px;">
+			<div id="texto" style="width:80%; position:absolute; top:5%; margin-left:10%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Vou te explicar Carol: fazemos essas coisas malucas graças a Engenharia Genética, que é um conjunto de técnicas que tem por objetivo a manipulação do material genético. São técnicas que permitem identificar, isolar e multiplicar genes, bem como construir moléculas híbridas de DNA, isto é, DNA constituído por segmentos originários de diferentes  espécies de seres vivos.
+			</div>	
+				<img src="images/chalkDenito3.png" style="width:220px; position: absolute; bottom:5px; left:40%">		
+		</div>
+		<div id="tomada2" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+			<div id="texto" style="width:80%; position:absolute; top:5%; margin-left:10%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				A estrutura da molécula de DNA, que é formada por uma cadeia dupla composta de nucleotídeos sendo basicamente igual em todos os organismos, ajuda muito nessa tarefa, já que esta é uma molécula naturalmente <b>Re</b><i>Combinante</i>, como veremos nesse tópico! 
+			</div>			
+			<img src="images/chalkDenito4.png" style="width:400px; position: absolute; bottom:20px; left:30%">
+			</div>
+			<div id="tomada3" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+				<div id="texto" style="width:80%; position:absolute; top:5%; margin-left:10%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Vamos voltar um pouquinho no tempo, para a década de 70, onde a tecnologia do DNA recombinante teve seu início! 
+			</div>
+			<img src="images/chalkDenito5.png" style="width:350px; position: absolute; bottom:30px; left:35%">
+		</div>
+			<div id="tomada4" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+				<div id="texto" style="width:80%; position:absolute; top:5%; margin-left:10%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Esta tecnologia constitui a base da Engenharia Genética. O desenvolvimento da bioquímica e os estudos genéticos realizados em microrganismos, notadamente bactérias e bacteriófagos, deram uma grande contribuição para a obtenção de conhecimentos e de técnicas necessários para a manipulação de genes.
+			</div>
+			<img src="images/chalkDenito3.png" style="width:250px; position: absolute; bottom:25px; left:37%">
+		</div>
+
+	</body>
+
+	<script>	
+		//Constants
+		const cenarioAtual = 4;
+		const numTomadas = 4;
+		const locucoes = ["", ""];
+		
+		//Buffers
+		var tomadaAtual = 0;
+		
+		//Load:
+		avancaTomada();
+		
+	</script>
+</html>

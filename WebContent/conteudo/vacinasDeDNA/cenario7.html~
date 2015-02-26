@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">	
+		<link rel="stylesheet" type="text/css" href="localStyle.css">		
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/jquery.zoomooz.min.js"></script>
+		<script src="../../js/nhpup_1.1.js"></script>
+		<script src="../../js/navegacao.js"></script>
+	</head>
+
+	<body class="slideQuadro">
+		<div id="tomada1" style="width:100%; height:100%; position: absolute; bottom:0px;">
+			<div id="texto" style="width:90%; position:absolute; top:5%; margin-left:5%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				A vacina ainda não foi testada em humanos. Muitos testes ainda são necessários antes da sua aplicação, mas vamos entender como funcionaria a vacina caso aplicada em humanos. Ao ser vacinado, a proteína do vírus geneticamente manipulada é injetada no indivíduo. 
+			</div>	
+				<img src="images/sofia5.png" style="width:205px; position: absolute; bottom:-80px; left:40%">	
+		</div>
+		<div id="tomada2" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+			<div id="texto" style="width:90%; position:absolute; top:5%; margin-left:5%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Como esta é uma proteína estranha ao organismo, seu sistema imunológico tratará de produzir anticorpos contra essa proteína invasora, além de produzir também células de memória.
+			</div>			
+			<img src="images/celulasDeMemoria2.png" style="width:600px; position: absolute; bottom:70px; left:25%">
+			</div>
+		<div id="tomada3" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+			<div id="texto" style="width:80%; position:absolute; top:5%; margin-left:10%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Quando picado pelo mosquito <i>Aedes aegypti</i> infectado com  o vírus da dengue, a pessoa entra em contato com o patógeno. 
+			</div>
+			<img src="images/patogeno4.png" style="width:450px; position: absolute; bottom:10px; left:30%">
+		</div>
+		<div id="tomada4" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+			<div id="texto" style="width:80%; position:absolute; top:5%; margin-left:10%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Mas como o vírus apresenta a mesma proteína presente na vacina, o sistema imunológico reconhece o invasor muito mais rapidamente, já que células de memória foram produzidas após a vacinação, e anticorpos começam a ser produzidos. Assim, o vírus é eliminado antes de a pessoa ficar realmente doente.
+			</div>
+			<img src="images/virus.png" style="width:350px; position: absolute; bottom:50px; left:30%">
+		</div>
+	</body>
+
+	<script>	
+		//Constants
+		const cenarioAtual = 7;
+		const numTomadas = 4;
+		const locucoes = ["", ""];
+		
+		//Buffers
+		var tomadaAtual = 0;
+		
+		//Load:
+		avancaTomada();
+		
+	</script>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">		
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/jquery.zoomooz.min.js"></script>
+		<script src="../../js/nhpup_1.1.js"></script>
+		<script src="../../js/navegacao.js"></script>
+	</head>
+	<body class="slideQuadro">
+		<div id="tomada1" style="width:100%; height:100%; position: absolute; bottom:0px;">
+			<div id="texto" style="width:86%; position:absolute; top:5%; margin-left:7%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				A figura a seguir, mostra a árvore genealógica do casal Azulino e Rosaleta e seu único filho que acabou de nascer. Houve uma confusão na hora do parto e agora o pessoal do hospital está em dúvida entre três crianças e pediram ajuda aos colegas geneticistas para a solucionar esse mistério... Os geneticistas fizeram então uma PCR  do loco de microssatélite “X” e viram o resultado num gel de eletroforese.  
+			</div>				
+		</div>
+		<div id="tomada2" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+			<div id="texto" style="width:86%; position:absolute; top:5%; margin-left:7%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				No gel foi possível ver que cada individuo apresentava manchas (chamadas por eles de bandas) em quatro posições diferentes representando os diferentes alelos que cada individuo possui para o loco “X” (X1, X2, X3 e X4). Sabendo que o filho de Azulino e Rosaleta deve compartilhar uma das bandas da mãe e a outra do pai, qual das três crianças é filho do casal, Laranjito, Amarelino ou Verdolengo? Clique na cor para ver se acertou!  
+			</div>			
+		</div>
+		
+		<div id="tomada3" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+				<div id="texto" style="width:100%; position:absolute; top:5%; margin-left:7%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+			JOGO A SER COLOCADO NO SLIDE (1) AINDA
+		</div>
+		</div>
+
+		<div id="tomada4" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+				<div id="texto" style="width:100%; position:absolute; top:5%; margin-left:7%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+			JOGO A SER COLOCADO NO SLIDE (2) AINDA
+				</div>
+		</div>
+
+		<div id="tomada5" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+				<div id="texto" style="width:100%; position:absolute; top:5%; margin-left:7%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+			JOGO A SER COLOCADO NO SLIDE (3) AINDA
+				</div>
+		</div>
+
+		<div id="tomada6" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+				<div id="texto" style="width:100%; position:absolute; top:5%; margin-left:7%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+			JOGO A SER COLOCADO NO SLIDE (4) AINDA
+				</div>
+		</div>
+	</body>
+	
+	<script>
+		//Constants
+		const cenarioAtual = 14;
+		const numTomadas = 6;
+		const locucoes = [""];
+		
+		//Buffers
+		var tomadaAtual = 0;
+		
+		//Load:
+		$(document).ready(function() {		
+			$('#narrador').animate({
+					marginLeft: '300px'
+				}, 1000, function() {avancaTomada();}
+			);			
+		});
+				
+	</script>
+</html>

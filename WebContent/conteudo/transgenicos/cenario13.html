@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">	
+		<link rel="stylesheet" type="text/css" href="localStyle.css">		
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/jquery.zoomooz.min.js"></script>
+		<script src="../../js/nhpup_1.1.js"></script>
+		<script src="../../js/navegacao.js"></script>
+	</head>
+
+	<body class="slideQuadro">
+		<div id="tomada1" style="width:100%; height:100%; position: absolute; bottom:0px;">
+			<div id="texto" style="width:85%; position:absolute; top:10%; margin-left:10%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				A ovelha Dolly, primeiro mamífero clonado, foi criada em fevereiro de 1996 pelo cientista Ian Wilmut na Escócia.
+			</div>	
+			<div id="texto" style="width:60%; position:absolute; top:37%; margin-left:35%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				O cientista promoveu a retirada do núcleo de células mamárias de uma ovelha adulta, e as implantou em um óvulo anucleado de outra ovelha, sendo este transferido à uma terceira ovelha para posterior desenvolvimento.
+			</div>	
+			<img src="images/dolly.png" style="width:250px; position: absolute; bottom:100px; left:5%">
+		</div>
+		<div id="tomada2" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+			<div id="texto" style="width:75%; position:absolute; top:5%; margin-left:10%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Apesar da clonagem bem sucedida, Dolly viveu poucos anos após manifestar doenças associadas à velhice a partir de cinco anos e meio de idade.
+			</div>	
+<div id="texto" style="width:60%; position:absolute; top:35%; margin-left:30%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Dolly deu origem à 4 ovelhas, provando assim que um animal clonado não era estéril! 
+			</div>	
+			<img src="images/ovelinha.png" style="width:200px; position: absolute; bottom:90px; left:50%">
+			<img src="images/chalkDenito8.png" style="width:200px; position: absolute; bottom:50px; left:8%">
+		</div>
+			<div id="tomada3" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+				<div id="texto" style="width:70%; position:absolute; top:10%; margin-left:15%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Vamos ver no livro os riscos e benefícios potencias de organismos geneticamente modificados (OGM):
+				</div>
+			<img src="images/chalkDenito2.png" style="width:200px; position: absolute; bottom:10px; left:10%">
+			<img src="images/livro.png" style="width:200px; position: absolute; bottom:120px; left:50%">
+		</div>
+	</body>
+
+	<script>	
+		//Constants
+		const cenarioAtual = 13;
+		const numTomadas = 3;
+		const locucoes = ["", ""];
+		
+		//Buffers
+		var tomadaAtual = 0;
+		
+		//Load:
+		avancaTomada();
+		
+	</script>
+</html>

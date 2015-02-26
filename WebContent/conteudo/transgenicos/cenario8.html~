@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">	
+		<link rel="stylesheet" type="text/css" href="localStyle.css">		
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/jquery.zoomooz.min.js"></script>
+		<script src="../../js/nhpup_1.1.js"></script>
+		<script src="../../js/navegacao.js"></script>
+	</head>
+
+	<body class="slideQuadro">
+		<div id="tomada1" style="width:100%; height:100%; position: absolute; bottom:0px;">
+			<div id="texto" style="width:85%; position:absolute; top:5%; margin-left:10%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Boa parte daquele feijãozinho, que não pode faltar na mesa dos brasileiros, em breve deve ser encontrado no mercado com o símbolo que indica que o produto é transgênico. Isso porque a EMBRAPA (Empresa Brasileira de Pesquisa Agropecuária) desenvolveu o primeiro alimento transgênico do Brasil. O feijão transgênico da EMBRAPA, é resistente ao mosaico dourado, uma doença causada por um vírus que provoca cor amarela das folhas e uma série de deformações na planta, além da queda prematura das flores, prejudicando dessa forma a produção <br> das sementes.
+			</div>	
+		</div>
+		<div id="tomada2" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+			<img src="images/sinal.png" style="width:600px; position: absolute; bottom:200px; left:20%">
+			<div id="texto" style="width:75%; position:absolute; top:75%; margin-left:10%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Símbolo que identifica alimentos transgênicos definido pelo Ministério da Justiça
+			</div>	
+		</div>
+			<div id="tomada3" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+				<div id="texto" style="width:70%; position:absolute; top:5%; margin-left:20%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				A liberação para plantio e consumo ainda depende de alguns estudos, mas acredita-se que a produção se inicie a partir de 2015. A reportagem apresentada no Globo Rural, mostra um pouco sobre o desenvolvimento das pesquisas para a produção do feijão transgênico: 
+				</div>
+
+				<div id="texto" style="width:60%; position:absolute; top:60%; margin-left:30%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+<a href="http://g1.globo.com/economia/agronegocios/noticia/2013/02/embrapa-chega-ultima-etapa-de-testes-com-feijao-transgenico.html" target="_blank">Embrapa chega ultima etapa de testes com feijao transgenico</a>
+			</div>
+			<img src="images/chalkDenito4.png" style="width:500px; position: absolute; bottom:10px; left:-10%">
+		</div>
+	</body>
+
+	<script>	
+		//Constants
+		const cenarioAtual = 8;
+		const numTomadas = 3;
+		const locucoes = ["", ""];
+		
+		//Buffers
+		var tomadaAtual = 0;
+		
+		//Load:
+		avancaTomada();
+		
+	</script>
+</html>

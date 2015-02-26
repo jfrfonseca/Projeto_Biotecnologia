@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">		
+		<script src="../../js/navegacao.js"></script>
+	</head>
+
+		<body onresize="escalar()">			
+			<div id="container" >
+		
+				<div id="cenario">				
+				</div>	
+				
+				<div id="controles">
+				
+					<div id="autoPilot" onclick="automatico()">
+						<img id="autoIcon" src="../../img/play.png" width="100%">
+					</div>
+				
+					<div id="abas">
+						<div class="aba" onclick="alternaCenario(1)">
+							<div class="num"> 1 </div>
+							<img src="../../img/tabn.png" width="100%">							
+						</div>
+						<div class="aba" onclick="alternaCenario(14)">
+							<img src="../../img/tabn.png" width="100%">
+							<div class="num"> 2 </div>
+						</div>
+					</div>
+					
+					<div id="som">
+					</div>
+					
+					<div id="setas">
+						<div class="nav" id="anterior" onclick="document.getElementById('scene').contentWindow.retornaTomada()">
+							<img src="../../img/seta.png" width="90%">
+						</div>					
+						<div class="nav" id="home">
+							<a href="../../index.html">
+								<img src="../../img/home.png" width="90%">
+							</a>
+						</div>										
+						<div class="nav" id="proximo" onclick="document.getElementById('scene').contentWindow.avancaTomada(1)">
+							<img src="../../img/seta.png" id="imgNext" width="90%">
+						</div>	
+					</div>
+					
+				</div>
+				
+			</div>			
+		</body>
+	
+	<script>	
+		//Constants
+		const numCenarios = 16;
+		
+		//Variables
+		var auto = true;
+	
+		//Load:
+		escalar();
+		alternaCenario(1);
+	</script>
+</html>

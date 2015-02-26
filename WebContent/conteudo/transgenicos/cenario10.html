@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">	
+		<link rel="stylesheet" type="text/css" href="localStyle.css">		
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/jquery.zoomooz.min.js"></script>
+		<script src="../../js/nhpup_1.1.js"></script>
+		<script src="../../js/navegacao.js"></script>
+	</head>
+
+	<body class="slideQuadro">
+		<div id="tomada1" style="width:100%; height:100%; position: absolute; bottom:0px;">
+			<div id="texto" style="width:85%; position:absolute; top:10%; margin-left:10%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Essa técnica surgiu por volta de 1938, quando Hans Spemann iniciou seus estudos e propôs a transferência de um núcleo de uma célula em estágio tardio para um óvulo. No entanto, a primeira clonagem bem sucedida foi realizada em 1996, por um cientista escocês chamado Lan Wilmut. Sua experiência fundamentou-se na extração e manipulação do núcleo de células diploides (2N), de um organismo já em estágio avançado de desenvolvimento para o interior de um óvulo!
+			</div>	
+		</div>
+		<div id="tomada2" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+			<img src="images/HansSpemann.png" style="width:200px; position: absolute; bottom:200px; left:15%">
+			<div id="texto" style="width:75%; position:absolute; top:70%; margin-left:-13%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Hans Spemann
+			</div>	
+			<img src="images/LanWilmut.png" style="width:200px; position: absolute; bottom:180px; left:55%">
+			<div id="texto" style="width:75%; position:absolute; top:73%; margin-left:27%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				LanWilmut
+			</div>	
+
+		</div>
+			<div id="tomada3" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+				<div id="texto" style="width:70%; position:absolute; top:15%; margin-left:15%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Mas afinal, como é feita a clonagem? Para descobrir, vamos acompanhar no livro!
+				</div>
+			<img src="images/chalkDenito7.png" style="width:200px; position: absolute; bottom:10px; left:10%">
+			<img src="images/livro.png" style="width:200px; position: absolute; bottom:120px; left:50%">
+		</div>
+	</body>
+
+	<script>	
+		//Constants
+		const cenarioAtual = 10;
+		const numTomadas = 3;
+		const locucoes = ["", ""];
+		
+		//Buffers
+		var tomadaAtual = 0;
+		
+		//Load:
+		avancaTomada();
+		
+	</script>
+</html>

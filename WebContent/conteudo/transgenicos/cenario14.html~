@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html PUBLIC>
+
+<html>
+	
+	<head>
+		
+		<meta content="noindex, nofollow" name="robots">
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">		
+
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+	
+		<script src="../../js/jquery.zoomooz.min.js"></script>
+		
+		<script src="../../js/nhpup_1.1.js"></script>
+		
+		<script src="../../js/navegacao.js"></script>
+	
+	</head>
+
+	<body class="slideLivro">
+		
+		<div id="tomada1" style="position: absolute; width:100%; bottom:0px">	
+			<img src="images/texto3.png" style="width:25%; position: absolute; bottom:500px; left:18%">
+			<img src="images/texto4.png" style="width:45%; position: absolute; bottom:140px; left:10%">
+			<img src="images/texto5.png" style="width:45%; position: absolute; bottom:140px; left:50%">
+		</div>
+		<div id="tomada2" style="position: absolute; width:150%; bottom:0px; display:none;">	
+			<img src="images/texto6.png" style="width:35%; position: absolute; bottom:105px; left:2%">
+			<img src="images/texto7.png" style="width:35%; position: absolute; bottom:100px; left:30%">
+		</div>	
+	</body>
+	
+
+	
+	<script>
+		
+	//Constants
+		
+		const cenarioAtual = 14;
+		
+		const numTomadas = 2;
+		
+		const locucoes = [""];
+		
+		
+	//Buffers
+		
+		var tomadaAtual = 0;
+		
+		
+	//Load:	
+	
+	</script>
+
+</html>

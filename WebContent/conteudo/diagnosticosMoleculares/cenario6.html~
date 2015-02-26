@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">	
+		<link rel="stylesheet" type="text/css" href="localStyle.css">		
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/jquery.zoomooz.min.js"></script>
+		<script src="../../js/nhpup_1.1.js"></script>
+		<script src="../../js/navegacao.js"></script>
+	</head>
+
+	<body class="slideQuadro">
+		<div id="tomada1" style="width:100%; height:100%; position: absolute; bottom:0px;">
+			<div id="texto" style="width:80%; position:absolute; top:5%; margin-left:11%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Em 2013 a atriz Angelina Jolie, que possuía casos de cânceres de mama em sua família, se submeteu a um teste de diagnóstico molecular para detecção de mutações nos genes BRCA1 e BRCA2. Estes dois genes, quando funcionam corretamente, são responsáveis pela produção de proteínas que impedem a proliferação de tumores.
+			</div>			
+			<div id="texto" style="width:60%; position:absolute; top:60%; margin-left:25%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+			Mas, caso um deles apresente alguma mutação, é possível que a proteína produzida seja defeituosa, como vimos que pode acontecer na anemia falciforme.
+			</div>		
+			<img src="images/chalkSofia5.png" style="width:260px; position: absolute; bottom:0px; left:-2%">
+		</div>
+		<div id="tomada2" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
+			<div id="texto" style="width:70%; position:absolute; top:15%; margin-left:25%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
+				Bom, mas primeiramente temos que diferenciar genético de hereditário. O câncer é uma doença genética, já que tem inicio com a alteração de genes que impedem o controle das divisões celulares. A hereditariedade está relacionada à transmissão de certas características genéticas dos pais para os filhos dentro da mesma família.
+Vejam a foto da minha família!  
+			</div>						
+			<img src="images/chalkSofia6.png" style="width:220px; position: absolute; bottom:0px; left:4%">
+		</div>
+		<div id="tomada3" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">						
+			<img src="images/familia.png" style="width:650px; position: absolute; bottom:120px; left:20%">
+			<div id="texto" style="width:70%; position:absolute; top:83%; margin-left:7%;
+			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:left;">
+				Perceba como minha filha tem características em comum comigo e com meu marido!
+			</div>		
+		</div>
+	</body>
+
+	<script>	
+		//Constants
+		const cenarioAtual = 6;
+		const numTomadas = 3;
+		const locucoes = ["", "", "", "", "", "", "", "", "", "", "", "", ""];
+		
+		//Buffers
+		var tomadaAtual = 0;
+		
+		//Load:
+		avancaTomada();
+		
+	</script>
+</html>

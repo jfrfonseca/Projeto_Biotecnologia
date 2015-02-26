@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta content="noindex, nofollow" name="robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/slideStyle.css">		
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/jquery.zoomooz.min.js"></script>
+		<script src="../../js/nhpup_1.1.js"></script>
+		<script src="../../js/navegacao.js"></script>
+	</head>
+	<body class="slideMuro">
+		<div id="tomada1" style="position: absolute; width:100%; bottom:0px">
+			<img src="images/aluna.png" width="480px" style="position: absolute; left:25%; bottom:0px;">
+			<img src="images/fala3.png" width="550px" style="position: absolute; left:50%; bottom:390px;">
+		</div>
+	</body>
+	
+	<script>
+		//Constants
+		const cenarioAtual = 3;
+		const numTomadas = 1;
+		const locucoes = [""];
+		
+		//Buffers
+		var tomadaAtual = 0;
+		
+		//Load:
+		$(document).ready(function() {		
+			$('#narrador').animate({
+					marginLeft: '300px'
+				}, 1000, function() {avancaTomada();}
+			);			
+		});
+				
+	</script>
+</html>
