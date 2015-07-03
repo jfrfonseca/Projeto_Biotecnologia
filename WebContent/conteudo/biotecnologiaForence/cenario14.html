@@ -19,43 +19,22 @@
 		<div id="tomada2" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
 			<div id="texto" style="width:86%; position:absolute; top:5%; margin-left:7%;
 			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
-				No gel foi possível ver que cada individuo apresentava manchas (chamadas por eles de bandas) em quatro posições diferentes representando os diferentes <a onmouseover="nhpup.popup('formas alternativas da informação genética contida no mesmo loco gênico');">alelos</a> que cada individuo possui para o loco “X” (X1, X2, X3 e X4). Sabendo que o filho de Azulino e Rosaleta deve compartilhar uma das bandas da mãe e a outra do pai, qual das três crianças é filho do casal, Laranjito, Amarelino ou Verdolengo? Clique na cor para ver se acertou!  
+				No gel foi possível ver que cada individuo apresentava manchas (chamadas por eles de bandas) em quatro posições diferentes representando os diferentes <a onmouseover="nhpup.popup('formas alternativas da informação genética contida no mesmo loco gênico');">alelos</a> que cada individuo possui para o loco “X” (X1, X2, X3 e X4). Sabendo que o filho de Azulino e Rosaleta deve compartilhar uma das bandas da mãe e a outra do pai, qual das três crianças é filho do casal, Laranjito, Amarelino ou Verdolengo? Clique na cor para ver se acertou (próximo slide)!  
 			</div>			
 		</div>
-		
 		<div id="tomada3" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
-				<div id="texto" style="width:100%; position:absolute; top:5%; margin-left:7%;
-			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
-			JOGO A SER COLOCADO NO SLIDE (1) AINDA
-		</div>
-		</div>
-
-		<div id="tomada4" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
-				<div id="texto" style="width:100%; position:absolute; top:5%; margin-left:7%;
-			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
-			JOGO A SER COLOCADO NO SLIDE (2) AINDA
-				</div>
-		</div>
-
-		<div id="tomada5" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
-				<div id="texto" style="width:100%; position:absolute; top:5%; margin-left:7%;
-			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
-			JOGO A SER COLOCADO NO SLIDE (3) AINDA
-				</div>
-		</div>
-
-		<div id="tomada6" style="width:100%; height:100%; position: absolute; bottom:0px; display:none;">
-				<div id="texto" style="width:100%; position:absolute; top:5%; margin-left:7%;
-			font-size:25pt; font-family:Comic Sans MS; color:white; text-align:center;">
-			JOGO A SER COLOCADO NO SLIDE (4) AINDA
-				</div>
+			<img src="images/Atividade.png" height="500px" style="position: absolute; left:5%; bottom:90px;">			 
+			<div id="resposta"></div>
+			<button type="button" onclick="Opcao(1)" style="background-color:orange; position:absolute; width:4%; height:4%; left:65%; bottom:200px;"></button>
+			<button type="button" onclick="Opcao(2)" style="background-color:yellow; position:absolute; width:4%; height:4%; left:75%; bottom:200px;"></button>
+			<button type="button" onclick="Opcao(3)" style="background-color:green; position:absolute; width:4%; height:4%; left:85%; bottom:200px;"></button>
 		</div>
 	</body>
 	
 	<script>
 		//Constants
 		const cenarioAtual = 14;
-		const numTomadas = 6;
+		const numTomadas = 3;
 		const locucoes = [""];
 		
 		//Buffers
@@ -68,6 +47,20 @@
 				}, 1000, function() {avancaTomada();}
 			);			
 		});
-				
+		
+	
+		function Opcao(opcao){
+			var final= document.getElementById("resposta");
+			if (opcao==1) {
+				final.innerHTML= '<img src="images/Resposta1.png" height="270px" style="position: absolute; left:60%; bottom:250px;"> <div id="texto" style="width:86%; position:absolute; bottom:140px; margin-left:34%;font-size:20pt; font-family:Comic Sans MS; color:white; text-align:center;">Tente Novamente!!!</div>';
+			}
+			else if(opcao==2) { 
+				final.innerHTML= '<img src="images/Resposta2.png" height="270px" style="position: absolute; left:60%; bottom:250px;"> <div id="texto" style="width:86%; position:absolute; bottom:140px; margin-left:34%;font-size:20pt; font-family:Comic Sans MS; color:white; text-align:center;">Tente Novamente!!!</div>';
+			}	
+			else { 
+				final.innerHTML= '<img src="images/Resposta3.png" height="270px" style="position: absolute; left:60%; bottom:250px;"> <div id="texto" style="width:86%; position:absolute; bottom:140px; margin-left:34%;font-size:20pt; font-family:Comic Sans MS; color:white; text-align:center;">Muito Bem!!! Você Acertou!</div>';
+			}	
+}	
+		
 	</script>
 </html>

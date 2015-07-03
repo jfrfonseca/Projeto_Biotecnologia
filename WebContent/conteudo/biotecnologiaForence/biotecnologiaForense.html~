@@ -24,7 +24,7 @@
 							<div class="num"> 1 </div>
 							<img src="../../img/tabn.png" width="100%">							
 						</div>
-						<div class="aba" onclick="alternaCenario(13)">
+						<div class="aba" onclick="alternaCenario(12)">
 							<img src="../../img/tabn.png" width="100%">
 							<div class="num"> 2 </div>
 						</div>
